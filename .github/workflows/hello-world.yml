@@ -7,4 +7,4 @@ jobs:
 
     steps:
       - run: echo "Hello, World!"
-      - run: echo "Triggered by ${{ github.property.actor }}
+      - run: echo "Triggered by ${{ github.property.actor }}"
