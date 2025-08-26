@@ -8,7 +8,8 @@ jobs:
       - run: echo "Hello, World!"
   run-name:
     runs-on:  ubunut-latest
-      - run:echo "Triggered By ${{github.actor}}"
-      - run:echo "Repository:${{ github.repository}}"
-      - run:echo "Reference ${{github.ref}}"
+    steps:
+      - run: echo "Triggered By ${{github.actor}}"
+      - run: echo "Repository:${{ github.repository}}"
+      - run: echo "Reference ${{github.ref}}"
   
