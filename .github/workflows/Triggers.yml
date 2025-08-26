@@ -1,0 +1,21 @@
+name: "Trigger Actions"
+
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Your name for personalized greeting"
+        required: true
+
+      greeting:
+        description: "Custom greeting message"
+        required: false
+        default: "Hello"
+
+jobs: 
+  Personal-Greeting:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - run: echo "Hello ${{workflow_dispatch.inputs.name}}
+      - run: echo "Hello ${{workflow_dispatch.inputs.greeting}}
