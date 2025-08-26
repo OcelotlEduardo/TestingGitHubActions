@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - run: echo "Hello ${{workflow_dispatch.inputs.name}}
-      - run: echo "Hello ${{workflow_dispatch.inputs.greeting}}
+      - run: echo "Hello ${{github.event.inputs.input_name}}
+    
